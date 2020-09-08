@@ -1,66 +1,101 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <title>GAST - timber, metal, glass solutions</title>
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  </head>
 
-  <body>
-    <!-- header -->
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>GAST - timber, metal, glass solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-    <nav id="navbar">
-      <div id="logodiv">
-        <img src="IMAGES/logo.png" alt="gast logo" id=gastlogo>
-      </div>
-        <ul class=navlist>
-          <li class="navlink"><a href="#home">Heim</a></li>
-          <li class="navlink"><a href="">Lausnir</a></li>
-          <li class="navlink"><a href="">Af hverju við</a></li>
-          <li class="navlink"><a href="">Hafa samband</a></li>
-        </ul>
-        <div class="burger">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-    </nav>
-    <script src="app.js"></script>
+<body>
+  <!-- header -->
 
-    <main>
-    <div id="welcomecontainer">
-      <h1>Velkomin á heimasíðu Gast ehf.</h1>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.<p>
+  <nav id="navbar">
+    <div id="logodiv">
+      <img src="IMAGES/logo.png" alt="gast logo" id=gastlogo>
     </div>
-    <section id="solutionboxcontainer">
-      <a href="www.google.com">
-      <div class="solutionbox">
-        <div class="smallcolorrec" id="yellow"></div>
-        <h2>Timber Windows & Doors</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing</p>
-        <div class="imgdiv" id="windowsimg"><img src="IMAGES/img1.jpg" alt="" class="image"></div>
+    <ul class=navlist>
+      <li class="navlink"><a href="#home">Heim</a></li>
+      <li class="navlink"><a href="">Lausnir</a></li>
+      <li class="navlink"><a href="">Af hverju við</a></li>
+      <li class="navlink"><a href="">Hafa samband</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+  <script src="app.js"></script>
+
+  <main>
+
+    <div id="welcomecontainer">
+      <div class="fixed-width-content">
+        <h1>Velkomin á heimasíðu Gast ehf.</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+        </p>
       </div>
-    </a>
-    <a href="www.google.com">
-      <div class="solutionbox">
-        <div class="smallcolorrec" id="grey"></div>
-        <h2>Stainless Steel Solutions</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing</p>
-        <div class="imgdiv" id="steelimg"><img src="IMAGES/img2.jpg" alt="" class="image"></div>
+    </div>
+    <div class="fixed-width-content">
+      <h2 class="solutionsh2">Solutions for your home.</h2>
+      <p class="solutionsp">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <section id="solutionboxcontainer">
+        <a href="www.google.com">
+          <div class="solutionbox">
+            <div class="smallcolorrec" id="yellow"></div>
+            <h3>Timber Windows & Doors</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+            <div class="imgdiv" id="windowsimg"><img src="IMAGES/img1.jpg" alt="" class="image"></div>
+          </div>
+        </a>
+        <a href="www.google.com">
+          <div class="solutionbox">
+            <div class="smallcolorrec" id="grey"></div>
+            <h3>Stainless Steel Solutions</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+            <div class="imgdiv" id="steelimg"><img src="IMAGES/img2.jpg" alt="" class="image"></div>
+          </div>
+        </a>
+        <a href="www.google.com">
+          <div class="solutionbox">
+            <div class="smallcolorrec" id="black"></div>
+            <h3>Glass Solutions</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+            <div class="imgdiv" id="glassimg"><img src="IMAGES/img3.jpg" alt="" width="348px" class="image"></div>
+          </div>
+        </a>
+      </section>
+    </div>
+    <!-- form -->
+    <section class="blue-background">
+      <div id="flex-container-form" class="fixed-width-content">
+        <div class="form-text">
+          <h2>Let us know what you are <span class="text-yellow">working</span> on.</h2>
+          <p>Lorem Ipsum is simply dummy text of the
+            printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard
+            dummy text.</p>
+        </div>
+
+        <form id="form">
+          <label for="Name">Name</label>
+          <input type="text" name="Name" class="form-input">
+          <label for="Surname">Surname</label>
+          <input type="text" name="Surname" class="form-input">
+          <label for="Email">Email</label>
+          <input type="email" name="Email" class="form-input">
+          <label for="Phone">Phone number</label>
+          <input type="tel" name="Phone" class="form-input">
+          <label for="Message">Message</label>
+          <textarea name="Message" form="form" class="form-input"></textarea>
+          <input type="Submit" name="Submit" value="Send" id="submit" class="form-input">
+        </form>
       </div>
-    </a>
-    <a href="www.google.com">
-      <div class="solutionbox">
-        <div class="smallcolorrec" id="black"></div>
-        <h2>Glass Solutions</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing</p>
-        <div class="imgdiv" id="glassimg"><img src="IMAGES/img3.jpg" alt="" width="348px" class="image"></div>
-      </div>
-    </a>
     </section>
-    </main>
-  </body>
+  </main>
+</body>
 
 </html>
