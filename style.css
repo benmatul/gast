@@ -50,6 +50,7 @@ nav {
   box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.75);
   background-color: white;
   height: 75px;
+  z-index: 1000;
 }
 
 .burger {
@@ -65,11 +66,11 @@ nav {
 }
 
 .navlink:hover>a {
-  color: black;
+  color: #e0e0e0;
 }
 
 .navlink:hover {
-  background-color: #FFD459;
+  background-color:#2a2a2c;
   cursor: pointer;
 }
 
@@ -89,7 +90,7 @@ main {
 #welcomecontainer {
   padding-left: auto;
   height: 13.6875em;
-  background-color: #FFD459;
+  background-color: #BEBEBE;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -100,7 +101,8 @@ main {
   font-size: max(2.4vw, 27px);
   padding-bottom: 12px;
   text-align: right;
-  color: white;
+  color: #0A090C;
+  opacity: 82%;
 }
 
 #welcomecontainer p {
@@ -123,13 +125,13 @@ main {
 
 .solutionsh2 {
   font-size: 2.0625rem;
-  color: #011936;
+  color: #0A090C;
   margin-top: 50px;
   padding-bottom: 12px;
 }
 
 .solutionsp {
-  color: #011936;
+  color: #0A090C;
   font-size: 1.2rem;
 }
 
@@ -149,11 +151,6 @@ main {
   box-shadow: 0px 0px 15px -3px rgba(0, 0, 0, 0.75);
 }
 
-.solutionbox:hover>.imgdiv {
-  outline: 100px solid rgba(255, 212, 89, 0.1);
-  outline-offset: -100px;
-}
-
 .solutionbox h3 {
   color: #292E1E;
   font-size: 1.5625rem;
@@ -171,16 +168,16 @@ main {
   margin-bottom: 18px;
 }
 
-#yellow {
-  background-color: #FFD459;
+#creme {
+  background-color: #e0e0e0;
 }
 
 #grey {
-  background-color: #F5EFFF;
+  background-color: #CB9C73;
 }
 
 #black {
-  background-color: #010400;
+  background-color:#2a2a2c;
 }
 
 .imgdiv {
@@ -295,7 +292,7 @@ main {
 }
 
 textarea {
-  height: 250px;
+  height: 85px;
   width: 515px;
   background-color: transparent;
   border: 1px solid white;
@@ -309,7 +306,7 @@ textarea {
 input[type=submit] {
   width: 160px !important;
   background-color: white !important;
-  color: #011936 !important;
+  color: #2a2a2c !important;
   font-size: 18px;
   font-weight: bold;
 }
@@ -331,7 +328,7 @@ input[type=submit] {
 }
 
 .blue-background {
-  background-color: #011936;
+  background-color: #2a2a2c;
   display: flex;
 }
 
@@ -353,7 +350,7 @@ input[type=submit] {
 }
 
 .form-input:hover {
-  background-color: #FFD459 !important;
+  background-color: #CB9C73!important;
   border-style: none !important;
 }
 
@@ -398,8 +395,4 @@ input[type=submit] {
     padding-bottom: 50px;
     align-self: center;
   }
-}
-
-.text-yellow {
-  color: #FFD459;
 }
