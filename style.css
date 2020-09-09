@@ -305,10 +305,11 @@ textarea {
 
 input[type=submit] {
   width: 160px !important;
-  background-color: white !important;
+  background-color: #CB9C73!important;
   color: #2a2a2c !important;
   font-size: 18px;
   font-weight: bold;
+  border-style: none;
 }
 
 .form-text h2 {
@@ -343,6 +344,10 @@ input[type=submit] {
 #submit {
   margin-top: 24px;
   cursor: pointer;
+  border-style:none;
+}
+#submit:hover {
+  background-color:white!important;
 }
 
 .solutionsh2 {
@@ -395,4 +400,9 @@ input[type=submit] {
     padding-bottom: 50px;
     align-self: center;
   }
+}
+
+footer {
+  height:45px;
+  background-color:#e0e0e0;
 }
